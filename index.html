@@ -1,55 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehya-shop</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="navbar__logo">
-            <img src="img/header/logo.svg" alt="Logo" class="logo__image" />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ehya-shop</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="css/fonts.css" />
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <header class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar__logo">
+              <img src="img/header/logo.svg" alt="Logo" class="navbar__logo-image" />
+            </div>
+            <ul class="navbar-menu navbar-menu__hidden">
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Home</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Landings</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Pages</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Docs</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Help</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#"
+                  ><button class="navbar-menu__button">Get it now</button></a
+                >
+              </li>
+            </ul>
+            <button class="menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
           </div>
-          <ul class="navbar-menu navbar-menu__hidden">
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Home</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Landings</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Pages</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Docs</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Help</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#"
-                ><button class="navbar-menu__button">Get it now</button></a
-              >
-            </li>
-          </ul>
-          <button class="menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-          </button>
         </div>
         <div class="section">
-          <div class="section__left">
+          <div class="section__content">
             <div class="section__badge">
-              <span># READY TO BE COOL</span>
+              <span class="section__badge-text"># READY TO BE COOL</span>
             </div>
             <h1 class="section__title">
               Cause Everyone Deserve to be Cool & Fashionable
@@ -68,23 +69,48 @@
                 alt="icon: pay"
                 class="section__image"
               />
-              <span class="section__other--text">COD Payment</span>
+              <span class="section__other-text">COD Payment</span>
               <img
                 src="img/header/guarantee.svg"
                 alt="icon: Guarantee"
                 class="section__image"
               />
-              <span class="section__other--text">Guarantee</span>
+              <span class="section__other-text">Guarantee</span>
               <img
                 src="img/header/quality.svg"
                 alt="icon: Quality"
                 class="section__image"
               />
-              <span class="section__other--text">Quality</span>
+              <span class="section__other-text">Quality</span>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-  </body>
-</html>
+      </header>
+      <section class="collection">
+        <div class="container">
+          <div class="collection-wrapper">
+            <div class="collection__left">
+              <div class="collection__left-one">
+                <img src="img/collection/col-one.jpg" alt="Image collection" class="collection__left-image">
+              </div>
+              <div class="collection__left-two">
+                <img src="img/collection/col-two.jpg" alt="Image collection" class="collection__left-image">
+              </div>
+              <div class="collection__left-three">
+                <img src="img/collection/col-three.jpg" alt="Image collection" class="collection__left-image">
+              </div>
+            </div>
+            <div class="collection__right">
+              <h1 class="collection__title">
+                New Winter Collection
+              </h1>
+              <p class="collection__text">
+                Now is Winter Season. Like the season, we choose some outfit and clothes based on Winter season. You can see more this collection by click See More button on below. Let’s buy Our Collection before all they’re gone. Use EHYA20 to get 20% Disc. 
+              </p>
+              <a href="#" class="collection__link">Check Our Collection</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+  </html>
