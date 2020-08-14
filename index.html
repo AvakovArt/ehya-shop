@@ -9,6 +9,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/slick.css" /> -->
+    <!-- <link rel="stylesheet" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -142,12 +145,20 @@
           <div class="trend__header">
             <h1 class="trend__title">Trending Items</h1>
             <p class="trend__subtitle">
-              <span class="trend__subtitle-text">New Arrival</span>
-              <span class="trend__subtitle-text">Best Sellers</span>
-              <span class="trend__subtitle-text">Upcoming</span>
+              <span
+                class="tab trend__subtitle-text active"
+                data-target="#new-arrival"
+                >New Arrival</span
+              >
+              <span class="tab trend__subtitle-text" data-target="#bestsellers"
+                >Best Sellers</span
+              >
+              <span class="tab trend__subtitle-text" data-target="#upcoming"
+                >Upcoming</span
+              >
             </p>
           </div>
-          <div class="trend__content">
+          <div class="trend__content visible" id="new-arrival">
             <div class="trend__item">
               <img
                 src="img/trends/trend-one.jpg"
@@ -163,7 +174,7 @@
                 />
               </div>
             </div>
-            <div class="trend__item">
+            <div class="trend__item trend__item-two">
               <img
                 src="img/trends/trend-two.jpg"
                 alt="Image: trend-two"
@@ -178,7 +189,7 @@
                 />
               </div>
             </div>
-            <div class="trend__item">
+            <div class="trend__item trend__item-three">
               <img
                 src="img/trends/trend-three.jpg"
                 alt="Image: trend-three"
@@ -193,7 +204,7 @@
                 />
               </div>
             </div>
-            <div class="trend__item">
+            <div class="trend__item trend__item-four">
               <img
                 src="img/trends/trend-four.jpg"
                 alt="Image: trend-four"
@@ -208,7 +219,7 @@
                 />
               </div>
             </div>
-            <div class="trend__item">
+            <div class="trend__item trend__item-five">
               <img
                 src="img/trends/trend-five.jpg"
                 alt="Image: trend-five"
@@ -223,7 +234,7 @@
                 />
               </div>
             </div>
-            <div class="trend__item">
+            <div class="trend__item trend__item-six">
               <img
                 src="img/trends/trend-six.jpg"
                 alt="Image: trend-six"
@@ -238,7 +249,7 @@
                 />
               </div>
             </div>
-            <div class="trend__item">
+            <div class="trend__item trend__item-seven">
               <img
                 src="img/trends/trend-seven.jpg"
                 alt="Image: trend-seven"
@@ -259,11 +270,378 @@
               <span>Collection</span>
             </div>
           </div>
+          <div class="trend__content bestsellers" id="bestsellers">
+            <div class="trend__item">
+              <img
+                src="img/trends/trend-one.jpg"
+                alt="Image: trend-one"
+                class="trend__item-img"
+              />
+              <h3 class="trend__item-title">Minimalist Style</h3>
+              <div class="trend__item-price">
+                <span>$25.7</span>
+                <img
+                  src="img/trends/shopping-cart.svg"
+                  alt="Icon: shopping-cart"
+                />
+              </div>
+            </div>
+            <div class="trend__item trend__item-two">
+              <img
+                src="img/trends/trend-two.jpg"
+                alt="Image: trend-two"
+                class="trend__item-img"
+              />
+              <h3 class="trend__item-title">Luxury Gown</h3>
+              <div class="trend__item-price">
+                <span>$30.6</span>
+                <img
+                  src="img/trends/shopping-cart.svg"
+                  alt="Icon: shopping-cart"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="trend__content upcoming" id="upcoming">
+            <div class="trend__item trend__item-three">
+              <img
+                src="img/trends/trend-three.jpg"
+                alt="Image: trend-three"
+                class="trend__item-img"
+              />
+              <h3 class="trend__item-title">Full Coloristy</h3>
+              <div class="trend__item-price">
+                <span>$25.7</span>
+                <img
+                  src="img/trends/shopping-cart.svg"
+                  alt="Icon: shopping-cart"
+                />
+              </div>
+            </div>
+            <div class="trend__item trend__item-four">
+              <img
+                src="img/trends/trend-four.jpg"
+                alt="Image: trend-four"
+                class="trend__item-img"
+              />
+              <h3 class="trend__item-title">Pinky Winky</h3>
+              <div class="trend__item-price">
+                <span>$109</span>
+                <img
+                  src="img/trends/shopping-cart.svg"
+                  alt="Icon: shopping-cart"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.trend-wrapper -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.trend -->
+    <section class="section-sliders">
+      <div class="container">
+        <div class="slider">
+          <div class="swiper-container section-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item">
+                  <div class="slider__quote">
+                    <img src="img/slider/quote.svg" alt="Icon: quote" />
+                  </div>
+                  <div class="slider__text">
+                    "I absolutely love the designs and styles that Ehya
+                    creates..They are so different and innovative. I have bought
+                    several times from the collections and what I love is that
+                    they really are timeless pieces and the quality of the
+                    fabric is devine.... I look forward to seeing the new
+                    collections from season to season”
+                  </div>
+                  <div class="slider__text-name">
+                    Alicia Puma - Fashun Customer
+                  </div>
+                </div>
+              </div>
+              <!-- .swiper-slide -->
+              <div class="swiper-slide">
+                <div class="slider__item">
+                  <div class="slider__quote">
+                    <img src="img/slider/quote.svg" alt="Icon: quote" />
+                  </div>
+                  <div class="slider__text">
+                    "I absolutely love the designs and styles that Ehya
+                    creates..They are so different and innovative. I have bought
+                    several times from the collections and what I love is that
+                    they really are timeless pieces and the quality of the
+                    fabric is devine.... I look forward to seeing the new
+                    collections from season to season”
+                  </div>
+                  <div class="slider__text-name">
+                    Alicia Puma - Fashun Customer
+                  </div>
+                </div>
+              </div>
+              <!-- .swiper-slide -->
+              <div class="swiper-slide">
+                <div class="slider__item">
+                  <div class="slider__quote">
+                    <img src="img/slider/quote.svg" alt="Icon: quote" />
+                  </div>
+                  <div class="slider__text">
+                    "I absolutely love the designs and styles that Ehya
+                    creates..They are so different and innovative. I have bought
+                    several times from the collections and what I love is that
+                    they really are timeless pieces and the quality of the
+                    fabric is devine.... I look forward to seeing the new
+                    collections from season to season”
+                  </div>
+                  <div class="slider__text-name">
+                    Alicia Puma - Fashun Customer
+                  </div>
+                </div>
+              </div>
+              <!-- ... -->
+              <!-- .swiper-slide -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-story">
+      <div class="container">
+        <div class="story-wrapper">
+          <div class="story__content">
+            <div class="story__content-tag">STORIES</div>
+            <h1 class="story__content-title">
+              This is Fashun Story
+            </h1>
+            <div class="story__content-text">
+              Check our story about fashion for reference and your style.
+              Written by our designer and specialist.
+            </div>
+            <div class="story__slider-buttons">
+              <div
+                class="story__slider-button story__slider-button--prev"
+              ></div>
+              <div
+                class="story__slider-button story__slider-button--next"
+              ></div>
+            </div>
+          </div>
+          <div class="story__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="story__slide-item">
+                  <img
+                    src="img/story/slide-item-one.jpg"
+                    alt="Image: slide image"
+                    class="story__slide-image"
+                  />
+                  <div class="story__slide-absolute">
+                    <h2 class="story__slide-title">
+                      Mix & Match Style 01: Casual Style x Formal Style Look
+                    </h2>
+                    <a href="#" class="story__slide-link">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="story__slide-item">
+                  <img
+                    src="img/story/slide-item-two.jpg"
+                    alt="Image: slide image"
+                    class="story__slide-image"
+                  />
+                  <div class="story__slide-absolute">
+                    <h2 class="story__slide-title">
+                      Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YK
+                    </h2>
+                    <a href="#" class="story__slide-link">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-newsletter">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="newsletter__content">
+            <h1 class="newsletter__title">
+              Join Our Newsletter
+            </h1>
+            <p class="newsletter__text">
+              Just insert your email into the field below. And you will get the
+              updates about fashion & styles from us.
+            </p>
+          </div>
+          <form action="#" class="newsletter__form">
+            <div class="newsletter__input-group">
+              <span class="input__convert">
+                <img src="img/newsletter/convert.svg" alt="Icon: convert" />
+              </span>
+              <input
+                type="email"
+                class="newsletter__input"
+                placeholder="Your Email"
+              />
+              <button class="input__button" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__list">
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <img
+                    src="img/footer/footer-logo.svg"
+                    alt="Icon: footer-logo"
+                    class="footer__logo"
+                  />
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Build a modern and creative website with crealand
+                </a>
+              </li>
+              <div class="footer__social">
+                <a href="google.com" class="footer__social-link">
+                  <img
+                    src="img/footer/google-plus.svg"
+                    alt="Icon: google plus"
+                    class="footer__icon"
+                  />
+                </a>
+                <a href="twitter.com" class="footer__social-link">
+                  <img
+                    src="img/footer/twitter.svg"
+                    alt="Icon: twitter"
+                    class="footer__icon"
+                  />
+                </a>
+                <a href="instagram.com" class="footer__social-link">
+                  <img
+                    src="img/footer/instagram.svg"
+                    alt="Icon: instagram"
+                    class="footer__icon"
+                  />
+                </a>
+                <a href="linked.com" class="footer__social-link">
+                  <img
+                    src="img/footer/linked.svg"
+                    alt="Icon: linked"
+                    class="footer__icon"
+                  />
+                </a>
+              </div>
+            </ul>
+          </div>
+          <div class="footer__list">
+            <ul class="footer__ul footer__ul-one">
+              <li class="footer__item footer__item-title">
+                <a href="#" class="footer__link footer__link-head">Product</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Landingpage</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Referral Program</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__list">
+            <ul class="footer__ul footer__ul-two">
+              <li class="footer__item footer__item-title">
+                <a href="#" class="footer__link footer__link-head">Services</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Design</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Themes</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Illustrations</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">UI Kit</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list">
+            <ul class="footer__ul footer__ul-three">
+              <li class="footer__item footer__item-title">
+                <a href="#" class="footer__link footer__link-head">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list">
+            <ul class="footer__ul footer__ul-four">
+              <li class="footer__item footer__item-title">
+                <a href="#" class="footer__link footer__link-head">More</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">License</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Changelog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <img
+            src="img/footer/footer-heart.svg"
+            alt="Icon: footer bottom"
+            class="footer__bottom-image"
+          />
+          <a href="#" class="footer__bottom-copyright"
+            >Copyright © 2019. Crafted with love.</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

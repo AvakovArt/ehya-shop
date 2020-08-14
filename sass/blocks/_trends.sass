@@ -22,13 +22,14 @@
       margin-right: 38px
       &:last-child
         margin-right: 0
-      &:hover
-        font-weight: bold
-        color: $color
+      // &:hover
+      //   font-weight: bold
+      //   color: $color
   &__content
-    display: flex
+    display: none
     justify-content: space-between
     flex-wrap: wrap
+    visibility: hidden
   &__item
     display: flex
     flex-direction: column
@@ -86,3 +87,11 @@
         text-align: center
         letter-spacing: 0.2px
         color: $white
+  .visible
+    display: flex
+    visibility: visible
+.active
+  font-weight: bold
+  color: $color
+.tab
+  cursor: pointer
