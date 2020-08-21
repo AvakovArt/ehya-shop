@@ -8,31 +8,32 @@
     display: flex
     justify-content: space-between
     align-items: center
-  &__content
+  &-content
     flex-basis: 45%
-  &__title
-    font-family: "HK Grotesk", sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 48px
-    line-height: 60px
-    letter-spacing: 0.2px
-    color: $white
-    margin-bottom: 15px
-  &__text
-    font-style: normal
-    font-weight: normal
-    font-size: 18px
-    line-height: 32px
-    color: $white
-  &__form
+    padding-left: 10px
+    &__title
+      font-family: "HK Grotesk", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $white
+      margin-bottom: 15px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $white
+  &-form
     width: 447px
     margin-right: 62px
     background: $white
     border: 1px solid #C3CAD9
     border-radius: 8px
     padding: 4px 4px 4px 20px
-  &__input
+  &-input
     font-style: normal
     font-weight: 600
     font-size: 16px
@@ -41,21 +42,26 @@
     border: none
     margin-right: 30px
     outline: none
-    &-group
+    &__group
       display: flex
       justify-content: space-between
       align-items: center
       width: 100%
-.input
-  &__button
-    border-radius: 4px
-    background-color: $color
-    border: none
-    padding: 12px 28px
-    font-style: normal
-    font-weight: bold
-    font-size: 18px
-    line-height: 25px
-    text-align: center
-    color: $white
-    cursor: pointer
+      position: relative
+    &__label
+      position: absolute
+      left: 0
+      bottom: -20px
+  &-input
+    &__button
+      border-radius: 4px
+      background-color: $color
+      border: none
+      padding: 12px 28px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: $white
+      cursor: pointer

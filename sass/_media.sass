@@ -1,30 +1,72 @@
-@media (max-width: 1085px)
-  .section
-    &__content
-      max-width: 60%
+@media (max-width: 1280px)
+  .head
+    width: auto
+    margin: 0 10px
+@media (max-width: 1160px)
+  .navbar
+    padding: 26px 10px
   .collection
     &-wrapper
-      padding: 0 2px
+      padding: 0 5px
     &__left
+      justify-content: space-around
       &-two
         img
           width: 260px
+  .story
+    &-content
+      padding-left: 5px
+  .footer
+    &-wrapper
+      padding: 0 10px
+// @media (max-width: 1126px)
+  
+@media (max-width: 1085px)
+  .collection
     &__right
       margin-left: 40px
-@media (max-width: 992px)
-  .container
-    max-width: 780px
-  .section
-    &__content
-      max-width: 70%
-    &__title
-      font-size: 50px
-      line-height: 62px
-      margin-bottom: 20px
+@media (max-width: 1010px)
   .collection
     &-wrapper
       flex-direction: column
       justify-content: space-around
+    &__left
+      justify-content: space-evenly
+@media (max-width: 992px)
+  .container
+    max-width: 780px
+  .head
+    width: auto
+    height: auto
+    margin: 0 20px
+    padding-bottom: 35px
+    &__content
+      width: 100%
+      padding-left: 10px
+      padding-right: 10px
+    &__tag
+      margin-top: 35px
+      margin-bottom: 23px
+    &__title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 21px
+      width: 425px
+    &__text
+      width: 425px
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+    &__button
+      padding: 16px 36px
+      margin-bottom: 38px
+    &__other
+      width: 410px
+      &-item
+        span
+          margin-left: 5px
+  .collection
+    &-wrapper
   .trend
     &__content
       justify-content: space-around
@@ -33,17 +75,59 @@
     &__item
       &-last
         flex-basis: 33%
+  .slider
+    &__item
+      max-width: 750px
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      text-align: center
+    &-content
+      padding-left: 0
+      margin-bottom: 20px
+  .footer
+    &__ul
+      &-one
+        margin-left: 30px
+      &-two
+        margin-left: 30px
+      &-three
+        margin-left: 30px
+      &-four
+        margin-left: 30px
+
 @media (max-width: 768px)
+  body.lock
+    overflow: hidden
   .container
     max-width: 672px
   .navbar
     padding: 18px 0
     margin-top: 8px
     margin-bottom: 26px
+    
     &__logo
       margin-left: 13px
+      z-index: 99
     &-menu
       display: none
+      &--visible
+        display: block
+        background-color: $white
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        flex-direction: column
+        padding: 80px
+      &__item
+        &--mobile
+          margin-bottom: 10px
+          a
+            font-size: 20px
+            line-height: 26px
+      
   .menu
     &-button
       width: 16px
@@ -59,48 +143,40 @@
       margin-right: 14px
       margin-bottom: 7px
       background-color: transparent
+      z-index: 99 
       &__line
         width: 22px
         height: 2px
         background-color: #3A4C66
-  .section
-    padding: 36px 0 36px 28px
-    max-width: 728px
-    height: 624px
-    &__content
-      max-width: 60%
-    &__badge
-      margin-bottom: 20px
+  .head
     &__title
-      width: 100%
-      font-size: 48px
-      line-height: 60px
-      margin-bottom: 20px
+      width: auto
+      font-size: 40px
+      line-height: 52px
     &__text
-      font-size: 18px
-      line-height: 32px
-      margin-bottom: 36px
-    &__button
-      padding: 15px 41px
-      margin-bottom: 40px
+      width: auto
     &__other
-      &-text
-        margin-right: 15px
-        margin-left: 4px
+      width: auto
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+      &-item
+        margin-left: 15px
   .collection
     margin-top: 80px
-    margin-bottom: 48px
+    margin-bottom: 80px
     &-wrapper
+      // padding: 0
       flex-wrap: wrap
     &__left
       flex-basis: 100%
     &__right
-      margin: 30px
+      margin: 10px 30px 0 0
       flex-basis: 100%
-      margin-left: 2px
+      // margin-left: 2px
     &__title
       margin-top: 0
-      margin-bottom: 20px
+      margin-bottom: 18px
     &__text
       margin-bottom: 28px
     &__arrow
@@ -129,6 +205,86 @@
       &-last
         margin-left: 0
         margin-right: 7px 
+  .slider
+    padding-top: 45px
+    &__item
+      height: 420px
+    &__quote
+      margin-bottom: 18px
+    &__text
+      padding: 0 20px
+      margin-bottom: 36px
+  .story
+    &-wrapper
+      padding-top: 85px
+      flex-direction: column
+      margin-bottom: 235px
+    &-content
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      &__tag
+        left: 290px
+      &__title
+        margin-top: 49px
+        margin-bottom: 19px
+        width: auto
+      &__text
+        width: 500px
+        margin-bottom: 34px
+        text-align: center
+  .story
+    &-slider
+      margin-left: 10px
+      margin-right: 10px
+      &__button
+        &--prev
+          margin-right: 0
+          margin-left: 0
+        &--next
+          margin-right: 0
+          margin-left: 20px
+    &-slide
+      &__item
+        width: 100%
+        margin-top: 37px
+  .newsletter
+    &-wrapper
+      padding: 70px 0 78px 0
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+    &-content
+      &__text
+        margin-bottom: 54px
+        width: 500px
+    &-form
+      margin-right: 0
+  .footer
+    padding-top: 46px
+    &-wrapper
+      justify-content: flex-end
+      flex-wrap: wrap
+      padding-right: 69px
+    &__list
+      max-width: 220px
+      &__item
+    &__ul
+      &-one
+        margin-left: 60px
+      &-three
+        margin-top: 30px
+        margin-left: 0
+      &-four
+        margin-left: 58px
+        margin-top: 30px
+    &__bottom
+      margin-top: 40px
+@media (max-width: 745px)
+  .section
+    height: auto
 @media (max-width: 706px)
   .section
     max-width: 100%
@@ -152,7 +308,26 @@
           width: 250px
           height: 200px
           margin-bottom: 0
-          
+@media (max-width: 634px)
+  .footer
+    &__ul
+      &-one
+        margin-top: 0
+        margin-left: 30px
+      &-two
+        margin-top: 0
+        margin-left: 30px
+      &-three
+        margin-top: 0
+        margin-left: 30px
+      &-four
+        margin-top: 0
+        margin-left: 60px 
+@media (max-width: 630px)
+  .slider
+    &__item
+      height: 500px
+         
 @media (max-width: 576px)
   .container
     max-width: 450px
@@ -174,7 +349,7 @@
           width: 250px
       &-two
         width: 100%
-        justify-content: space-between
+        justify-content: space-around
         img
           width: 200px
           height: 150px
@@ -185,7 +360,44 @@
       &-last
         flex-basis: 60%
         margin-right: 0
-        
+  .slider
+    &__item
+      height: 550px
+  .story
+    &-slide
+      justify-content: center
+    &-content
+      &__text
+        width: auto
+  .newsletter
+    &-wrapper
+      padding: 70px 10px 78px 10px
+    &-content
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        width: auto
+        font-size: 16px
+        line-height: 28px
+    &-form
+      width: 100%
+      padding: 4px 4px 4px 10px
+    &-input
+      margin-right: 0
+      width: 100%
+      &__button
+        padding: 12px 15px
+        // width: 100%
+  // .footer
+  //   &-wrapper
+  //     padding-right: 0
+  .footer
+    &-wrapper
+      justify-content: flex-start
+      padding-left: 10px
+    &__ul
+      margin-left: 15px
 @media (max-width: 530px)
   .section
     &__title
@@ -227,52 +439,23 @@
     &__item
       &-last
         flex-basis: 270px
+@media (max-width: 460px)
+  .slider
+    &__item
+      height: 500px
+    &__text
+      margin-bottom: 20px
+      line-height: 30px
 @media (max-width: 320px)
   .container
     max-width: 310px
   .navbar
     margin-bottom: 20px
-  .section
-    width: 320px
-    height: 900px
-    background-image: url(../img/header/header-bg-320.jpg)
-    padding: 380px 20px 36px 20px
-    &__content
-      max-width: 90%
-      flex-direction: column
-      align-items: center
-      text-align: center
+  .head
+    text-align: center
     &__title
-      width: 300px
       font-size: 32px
-      line-height: 40px
-      margin-left: 15px
-      margin-bottom: 22px
-    &__text
-      width: 280px
-      font-size: 16px
-      line-height: 28px
-      margin-left: 15px
-      margin-bottom: 22px
-    &__badge
-      padding: 1px 35px
-    &__button
-      margin-left: 17px
-      font-size: 16px
-      line-height: 22px
-      padding: 13px 50px
-      margin-bottom: 22px
-    &__other
-      // width: 260px
-      flex-wrap: wrap
-      justify-content: center
-      align-items: center
-      &-text
-        margin-right: 5px
-        margin-left: 0
-    &__image
-      width: 24px
-      height: 24px
+      line-height: 40p
   .menu
     &-button
       margin-right: 29px
@@ -357,6 +540,38 @@
         span
           font-size: 20px
           line-height: 24px
-      
+  .slider
+    &__item
+      height: 600px
+    &__text
+      font-size: 18px
+      line-height: 36px
+  .story
+    &-wrapper
+      margin-bottom: 100px
+    &-content
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        width: 280px
+        text-align: center
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      margin-left: 10px
+  // .footer
+  //   &-wrapper
+  //     justify-content: flex-start
+  //     padding-right: 0
+  //   &__ul
+  //     &-one
+  //       margin-left: 0
+  //     &-two
+  //       margin-left: 0
+  //     &-three
+  //       margin-left: 0
+  //     &-four
+  //       margin-left: 0    
 
   

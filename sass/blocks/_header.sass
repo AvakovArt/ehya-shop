@@ -38,81 +38,77 @@
 .menu
   &-button
     display: none
-.section
+.head
   max-width: 1280px
   height: 700px
-  background-image: url(../img/header/header-bg.jpg)
-  background-size: cover
-  object-fit: cover
-  padding: 62px 0 46px 107px
   margin: auto
+  background-color: #f9f9f9
+  border-radius: 8px
+  &-container
+    max-width: 1280px
   &__content
-    max-width: 50%
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: flex-start
-  &__badge
-    background: $green
+    width: 55%
+    padding-left: 107px
+  &__tag
+    display: inline-block
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $green
+    background-color: rgba($green, 0.1)
     border-radius: 2000px
-    // opacity: 0.1
-    padding: 6px 16px
-    text-align: center
-    margin-bottom: 28px
-    &-text
-      color: $green
-      font-style: normal
-      font-weight: 600
-      font-size: 14px
-      line-height: 20px
-      opacity: 1
+    padding: 6px 18px
+    margin-top: 60px
+    margin-bottom: 27px
   &__title
-    width: 478px
     font-family: "HK Grotesk", sans-serif
     font-style: normal
     font-weight: bold
     font-size: 56px
     line-height: 68px
+    width: 474px
     letter-spacing: 0.2px
     color: $color
-    margin-bottom: 28px
+    margin-bottom: 30px
   &__text
-    color: $text-color-light
     font-style: normal
     font-weight: normal
     font-size: 20px
     line-height: 36px
+    color: $color
     margin-bottom: 52px
   &__button
-    font-family: 'Open Sans', sans-serif
-    padding: 15px 42px
+    background-color: $color
+    border: none
+    padding: 15px 38px
+    border-radius: 8px
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 25px
     text-align: center
     color: $white
-    border-radius: 8px
-    background-color: $color
-    outline: none
-    border: none
-    cursor: pointer
-    margin-bottom: 46px
+    margin-bottom: 47px
+    letter-spacing: 1px
   &__other
-    max-width: 437px
+    width: 435px
     display: flex
-    align-items: center
     justify-content: space-between
-    &-text
-      margin-right: 22px
-      margin-left: 8px
+    align-items: center
+    &-item
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: "HK Grotesk", sans-serif
+      color: $color
       font-style: normal
       font-weight: 600
       font-size: 16px
       line-height: 20px
       letter-spacing: 0.2px
-      color: $color
-      &:last-child
-        margin-right: 0
+      span
+        margin-left: 8px
+        margin-right: 6px
 
       
